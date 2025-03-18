@@ -1,38 +1,54 @@
-package com.example.MomoLogWeb.model.entitiy;
+package com.example.MomoLogWeb.model.entity;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "Store_Info")
 public class StoreInfo {
+
+    @Id
+    @GeneratedValue
     // 店舗ID
-    private long id;
+    private Long id;
+
+    public StoreInfo(){}
 
     // 店舗名
+    @Column(name = "name")
     private String name;
 
     // 住所
+    @Column(name = "address")
     private String address;
 
     // 電話番号
+    @Column(name = "tel")
     private String tel;
 
     // 営業時間
+    @Column(name = "open_Time")
     private String openTime;
 
     // 定休日
+    @Column(name = "holiday")
     private String holiday;
 
     // カテゴリーID
-    private long categoryId;
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
 
     // 画像名
+    @Column(name = "image_Name")
     private String imageName;
 
-    public StoreInfo(int id, String name, String address, String tel, String openTime, String holiday, int categoryId, String imageName) {
-        this.id = id;
+    public StoreInfo(String name, String address, String tel, String openTime, String holiday, Long categoryId, String imageName) {
         this.name = name;
         this.address = address;
         this.tel = tel;
         this.openTime = openTime;
         this.holiday = holiday;
-        this.categoryId = categoryId;
+        this.category = category;
         this.imageName = imageName;
     }
 
@@ -40,7 +56,7 @@ public class StoreInfo {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -84,12 +100,12 @@ public class StoreInfo {
         this.holiday = holiday;
     }
 
-    public long getCategoryId() {
-        return categoryId;
+    public Category getCategory() {
+        return category;
     }
 
-    public void setCategoryId(int categoryId) {
-        this.categoryId = categoryId;
+    public void setCategory(Category categoryId) {
+        this.category = categoryId;
     }
 
     public String getImageName() {
@@ -98,5 +114,19 @@ public class StoreInfo {
 
     public void setImageName(String imageName) {
         this.imageName = imageName;
+    }
+
+    @Override
+    public String toString() {
+        return "StoreInfo {" +
+                "id=" + id + + '\'' +
+                ", name=" + name + + '\'' +
+                ", openTime='" + openTime + '\'' +
+                ", holiday='" + holiday + '\'' +
+                ", address='" + address + '\'' +
+                ", tel='" + tel + '\'' +
+                ", category='" + category + '\'' +
+                "' imageName" + imageName + '\'' +
+                '}';
     }
 }

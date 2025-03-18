@@ -1,4 +1,7 @@
 package com.example.MomoLogWeb.model.repository;
 
-public interface CategoryRepository {
+import com.example.MomoLogWeb.model.entity.Category;
+import org.springframework.data.repository.CrudRepository;
+
+public interface CategoryRepository extends CrudRepository<Category, Long> {
 }

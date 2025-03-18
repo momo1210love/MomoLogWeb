@@ -1,4 +1,7 @@
 package com.example.MomoLogWeb.model.repository;
 
-public interface StoreInfoRepository {
+import com.example.MomoLogWeb.model.entity.StoreInfo;
+import org.springframework.data.repository.CrudRepository;
+
+public interface StoreInfoRepository extends CrudRepository<StoreInfo, Long> {
 }
