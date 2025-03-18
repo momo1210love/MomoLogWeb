@@ -1,4 +1,4 @@
-package com.example.MomoLogWeb.model;
+package com.example.MomoLogWeb.model.entitiy;
 
 public class Category {
     // カテゴリーID

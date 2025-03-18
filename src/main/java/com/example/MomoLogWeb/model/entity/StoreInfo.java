@@ -1,4 +1,4 @@
-package com.example.MomoLogWeb.model;
+package com.example.MomoLogWeb.model.entitiy;
 
 public class StoreInfo {
     // 店舗ID
