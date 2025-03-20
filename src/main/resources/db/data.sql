@@ -8,9 +8,9 @@ INSERT INTO category(id, category_name, image_Name) VALUES (7, 'チーズ', 'che
 INSERT INTO category(id, category_name, image_Name) VALUES (8, 'お肉', 'meat.JPG')
 INSERT INTO category(id, category_name, image_Name) VALUES (9, 'ラーメン', 'ra_men.JPG')
 INSERT INTO category(id, category_name, image_Name) VALUES (10, '日本酒', 'sake.JPG')
-INSERT INTO category(id, category_name, image_Name) VALUES (11, 'バー', 'bar.jpg')
+INSERT INTO category(id, category_name, image_Name) VALUES (11, 'バー', 'ber.jpg')
 INSERT INTO category(id, category_name, image_Name) VALUES (12, 'スイーツ', 'sweets.JPG')
 
-INSERT INTO Store_Info (id, category_id, name, address, tel, open_Time, Holiday, image_Name) VALUES(1,1,'燗あがり','〒160-0023 東京都新宿区西新宿７丁目１６−１２ 新YSビル 3階','03-5338-5337','17:00~23:00','なし', '')
-INSERT INTO Store_Info (id, category_id, name, address, tel, open_Time, Holiday, image_Name) VALUES(2,6,'UNIHOLIC','〒106-0032 東京都港区六本木７丁目１４−５ 大和ビル 11F','03-5860-6852','17:00~23:00','なし','')
-INSERT INTO Store_Info (id, category_id, name, address, tel, open_Time, Holiday, image_Name) VALUES(3,11,'Tir na nog','〒104-0061 東京都中央区銀座５丁目９−５ チアーズ銀座 Ｂ１',' 03-6274-6416','11:00~4:00','なし','')
+INSERT INTO Store_Info (id, category_id, name, address, tel, open_Time, Holiday, image_Name) VALUES(1,1,'燗あがり','〒160-0023 東京都新宿区西新宿７丁目１６−１２ 新YSビル 3階','03-5338-5337','17:00~23:00','なし', 'kanagari1.jpg')
+INSERT INTO Store_Info (id, category_id, name, address, tel, open_Time, Holiday, image_Name) VALUES(2,6,'UNIHOLIC','〒106-0032 東京都港区六本木７丁目１４−５ 大和ビル 11F','03-5860-6852','17:00~23:00','なし','uniholic1.jpg')
+INSERT INTO Store_Info (id, category_id, name, address, tel, open_Time, Holiday, image_Name) VALUES(3,11,'Tir na nog','〒104-0061 東京都中央区銀座５丁目９−５ チアーズ銀座 Ｂ１',' 03-6274-6416','11:00~4:00','なし','tirnanog1.jpg')
