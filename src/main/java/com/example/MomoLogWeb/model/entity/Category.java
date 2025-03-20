@@ -38,8 +38,9 @@ public class Category {
     // 画像名
     private String imageName;
 
-    public Category(Long id, String imageName) {
+    public Category(Long id, String name, String imageName) {
         this.id = id;
+        this.name = name;
         this.imageName = imageName;
     }
 
